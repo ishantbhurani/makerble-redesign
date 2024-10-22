@@ -1,10 +1,12 @@
 import { FEED } from '../lib/data'
 import Avatar from './Avatar'
+import CreatePost from './CreatePost'
 
 export default function Feed() {
   return (
-    <main className='space-y-4 p-4 text-primary'>
-      <h2 className='mb-4 text-2xl font-bold'>News Feed</h2>
+    <main className='p-4 text-primary'>
+      <h1 className='mb-4 text-2xl font-bold'>News Feed</h1>
+      <CreatePost />
       <ul>
         {FEED.map((item, index) => (
           <li key={index}>
