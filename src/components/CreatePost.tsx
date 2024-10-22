@@ -1,14 +1,40 @@
+import { useRef } from 'react'
+import { useFeed } from '../hooks/useFeed'
+
 export default function CreatePost() {
+  const { addPost } = useFeed()
+  const textareaRef = useRef<HTMLTextAreaElement>(null)
+
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
 
-    console.log('submitted!')
+    if (!textareaRef.current) {
+      return
+    }
+
+    const text = textareaRef.current.value.trim()
+
+    if (!text || text.length < 3) {
+      // TODO: Show error message
+      return
+    }
+
+    const post = {
+      avatar: '/avatar.JPG',
+      name: 'Ishant Bhurani',
+      content: text,
+      time: 'just now',
+    }
+
+    addPost(post)
+    textareaRef.current.value = ''
   }
 
   return (
     <form onSubmit={handleSubmit} className='mb-6'>
       <div className='flex flex-col rounded-md border border-tertiary p-2 focus-within:border-secondary hover:border-secondary'>
         <textarea
+          ref={textareaRef}
           placeholder='What is happening?'
           name='post'
           className='resize-none text-primary outline-none'

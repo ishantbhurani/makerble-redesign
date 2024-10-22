@@ -1,14 +1,16 @@
-import { FEED } from '../lib/data'
+import { useFeed } from '../hooks/useFeed'
 import Avatar from './Avatar'
 import CreatePost from './CreatePost'
 
 export default function Feed() {
+  const { feed } = useFeed()
+
   return (
     <main className='p-4 text-primary'>
       <h1 className='mb-4 text-2xl font-bold'>News Feed</h1>
       <CreatePost />
       <ul>
-        {FEED.map((item, index) => (
+        {feed.map((item, index) => (
           <li key={index}>
             <FeedItem {...item} />
           </li>
