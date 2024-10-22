@@ -9,6 +9,7 @@ import {
   UserPen,
   Users,
 } from 'lucide-react'
+import { Post } from '../types'
 
 export const NAV_LINKS = [
   {
@@ -75,7 +76,7 @@ export const TASKS = [
   'Review client feedback',
 ] as const
 
-export const FEED = [
+export const FEED: Post[] = [
   {
     avatar: '/avatar.JPG',
     name: 'Ishant Bhurani',
