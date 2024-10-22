@@ -10,7 +10,6 @@ This is an [assessment](https://docs.google.com/document/d/1gMM8LALbnDQlb-mPul2e
   - [Features](#features)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -18,15 +17,15 @@ This is an [assessment](https://docs.google.com/document/d/1gMM8LALbnDQlb-mPul2e
 ### Screenshots
 
 <kbd>
-  <img src="/screenshot-desktop.png" alt='Makerble desktop screenshot'>
+  <img src="/public/screenshot-desktop.png" alt='Makerble desktop screenshot'>
 </kbd>
 
 <kbd>
-  <img src="/screenshot-tablet.png" alt='Makerble tablet screenshot'>
+  <img src="/public/screenshot-tablet.png" alt='Makerble tablet screenshot'>
 </kbd>
 
 <kbd>
-  <img src="/screenshot-mobile.png" alt='Makerble mobile screenshot'>
+  <img src="/public/screenshot-mobile.png" alt='Makerble mobile screenshot'>
 </kbd>
 
 ### Links
