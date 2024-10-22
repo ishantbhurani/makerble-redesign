@@ -4,15 +4,15 @@ import SearchBar from './SearchBar'
 
 export default function Header() {
   return (
-    <header className='col-start-2 -col-end-1 border-b border-gray-200 p-4 flex items-center justify-between gap-2'>
+    <header className='col-start-2 -col-end-1 flex items-center justify-between gap-2 border-b border-gray-200 p-4'>
       <SearchBar />
 
-      <ul className='text-secondary flex items-center gap-4'>
+      <ul className='flex items-center gap-4 text-secondary'>
         <li className='flex items-center justify-center'>
-          <button className='relative hover:text-primary group'>
+          <button className='group relative hover:text-primary'>
             <Bell size={20} />
-            <span className='absolute -top-2 left-2 bg-white w-4 h-4'>
-              <span className='absolute inset-0 font-medium flex items-center justify-center text-white rounded-full text-[0.75rem] p-2 bg-accent/60 w-4 h-4'>
+            <span className='absolute -top-2 left-2 h-4 w-4 bg-white'>
+              <span className='absolute inset-0 flex h-4 w-4 items-center justify-center rounded-full bg-accent/60 p-2 text-[0.75rem] font-medium text-white'>
                 1
               </span>
             </span>

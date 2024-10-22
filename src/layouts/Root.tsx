@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar'
 
 export default function Root() {
   return (
-    <div className='grid min-h-screen grid-cols-[4rem_1fr] md:grid-cols-[16rem_1fr] lg:grid-cols-[16rem_1fr_20rem] grid-rows-[4rem_1fr]'>
+    <div className='grid min-h-screen grid-cols-[4rem_1fr] grid-rows-[4rem_1fr] md:grid-cols-[16rem_1fr] lg:grid-cols-[16rem_1fr_20rem]'>
       <Nav />
       <Header />
       <Outlet />

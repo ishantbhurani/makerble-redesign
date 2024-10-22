@@ -5,8 +5,8 @@ import NavLink from './NavLink'
 
 export default function Nav() {
   return (
-    <nav className='row-span-full border-r border-gray-200 flex flex-col'>
-      <div className='p-3 mx-auto md:mx-0'>
+    <nav className='row-span-full flex flex-col border-r border-gray-200'>
+      <div className='mx-auto p-3 md:mx-0'>
         <Link to='/'>
           <picture>
             <source srcSet='/logo.png' media='(min-width: 768px)' />
@@ -15,7 +15,7 @@ export default function Nav() {
               alt='Makerble'
               width={134}
               height={38}
-              className='max-w-full block h-[38px] w-auto'
+              className='block h-[38px] w-auto max-w-full'
             />
           </picture>
         </Link>

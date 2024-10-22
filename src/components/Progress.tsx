@@ -16,9 +16,9 @@ export default function Progress({ value }: ProgressProps) {
   }, [])
 
   return (
-    <div className='bg-gray-200 w-full h-2 rounded-full overflow-hidden group'>
+    <div className='group h-2 w-full overflow-hidden rounded-full bg-gray-200'>
       <div
-        className='bg-accent/80 group-hover:bg-accent duration-200 h-full rounded-full transition-all'
+        className='h-full rounded-full bg-accent/80 transition-all duration-200 group-hover:bg-accent'
         style={{ width: `${progress}%` }}
       ></div>
     </div>

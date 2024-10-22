@@ -15,12 +15,12 @@ export default function Avatar({ avatar, name }: AvatarProps) {
         alt={name}
         width={20}
         height={20}
-        className='max-w-full w-8 h-8 rounded-full opacity-90 hover:opacity-100'
+        className='h-8 w-8 max-w-full rounded-full opacity-90 hover:opacity-100'
       />
     )
 
   return (
-    <div className='bg-secondary text-sm font-medium text-white w-8 h-8 flex items-center justify-center rounded-full'>
+    <div className='flex h-8 w-8 items-center justify-center rounded-full bg-secondary text-sm font-medium text-white'>
       <span>{initials}</span>
     </div>
   )
