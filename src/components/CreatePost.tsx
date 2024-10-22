@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { toast } from 'sonner'
 import { useFeed } from '../hooks/useFeed'
 
 export default function CreatePost() {
@@ -15,7 +16,7 @@ export default function CreatePost() {
     const text = textareaRef.current.value.trim()
 
     if (!text || text.length < 3) {
-      // TODO: Show error message
+      toast.error('Invalid input! Please enter at least 3 characters.')
       return
     }
 
@@ -27,6 +28,7 @@ export default function CreatePost() {
     }
 
     addPost(post)
+    toast.success('Post added successfully!')
     textareaRef.current.value = ''
   }
 

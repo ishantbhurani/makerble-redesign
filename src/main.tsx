@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Toaster } from 'sonner'
 import FeedProvider from './context/FeedContext'
 import './index.css'
 import Root from './layouts/Root'
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <Toaster position='top-right' richColors />
     <FeedProvider>
       <RouterProvider router={router} />
     </FeedProvider>
