@@ -36,12 +36,16 @@ This is an [assessment](https://docs.google.com/document/d/1gMM8LALbnDQlb-mPul2e
 ### Features
 
 - Simple design with a focus on typography and color.
-- Responsive design with a mobile-first approach.
+- **Responsive** design with a mobile-first approach.
 - Hover states for all interactive elements on the page.
-- TailwindCSS for styling.
-- React for building the components.
-- TypeScript for type checking.
-- Vercel for hosting the application.
+- **React** for building the components.
+- **TailwindCSS** for styling.
+- **TypeScript** for type checking.
+- **Vercel** for hosting the application.
+- Sonner with rich colors for **toast** notifications.
+- Create new post
+- Client-side **validation** while creating new post
+- Posts saved to **local storage**
 
 ## My process
 
@@ -56,6 +60,7 @@ This is an [assessment](https://docs.google.com/document/d/1gMM8LALbnDQlb-mPul2e
 - [clsx](https://github.com/lukeed/clsx) - utility for constructing `className` strings conditionally
 - [tailwind-merge](https://github.com/dcastil/tailwind-merge) - Merge Tailwind CSS classes without style conflicts
 - [Lucide](https://lucide.dev/) - An open-source icon library
+- [Sonner](https://sonner.emilkowal.ski/) - Toast notifications
 
 ## Author
 
