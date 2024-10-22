@@ -8,8 +8,6 @@ type AvatarProps = {
 export default function Avatar({ avatar, name }: AvatarProps) {
   const initials = getInitials(name)
 
-  console.log({ initials })
-
   if (avatar)
     return (
       <img
